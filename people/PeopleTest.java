@@ -2,13 +2,18 @@ package people;
 
 public class PeopleTest {
     public static void main(String[] args) {
-        People people = new People();
+        Instructor instructor = new Instructor();
+        instructor.setCpf("334.134.145-34");
+        instructor.setName("John");
+        instructor.printPersonData();
+        instructor.setAge(33);
+        System.out.println(instructor.printPersonData());
 
-        people.cpf = "334.134.145-34";
-        people.name = "John";
-        people.age = 33;
-        
+        Student student = new Student();
+        student.setCpf("109.634.855-64");
+        student.setName("Pedro");
+        student.setAge(14);
+        System.out.println(student.printPersonData());
 
-        System.out.println(people.printPersonData(17381));
     }
 }
