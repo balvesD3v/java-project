@@ -1,3 +1,4 @@
+package firstClasses;
 public class HelloWorld {
     // Todo conteudo é aqui dentro
     public static void main(String[] args) {
